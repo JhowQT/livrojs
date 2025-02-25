@@ -52,5 +52,5 @@ frm.btnSegundaFase.addEventListener("click", () => {
         const {candidatos, numeroAcertos} = candidato
         lista += `${candidatos} - ${numeroAcertos} acertos\n`;
     });
-    resp.innerText = lista
+    resp.innerText = lista;
 });
