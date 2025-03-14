@@ -31,7 +31,7 @@ frm.btnListar.addEventListener("click", () =>{
 
     let lista = "";
     for(const candidato of listaAprovados){
-        const {candidatos, numeroAcertos} = candidato
+        const {candidatos, numeroAcertos} = candidato;
         lista += `${candidatos} - ${numeroAcertos} acertos\n`;
     };
     resp.innerText = lista
@@ -39,8 +39,8 @@ frm.btnListar.addEventListener("click", () =>{
 frm.btnSegundaFase.addEventListener("click", () => {
 
     const entrada = prompt("Digite o número de para a APROVAÇÂO");
-    const numeroAprovacao = Number(entrada)
-    let lista = ""
+    const numeroAprovacao = Number(entrada);
+    let lista = "";
     if(isNaN(numeroAprovacao) || entrada.trim() === ""){
         alert("Digite um número válido paraq prosseguir com o programa");
     };
@@ -49,7 +49,7 @@ frm.btnSegundaFase.addEventListener("click", () => {
         alert("Não há candidatos que atendem a este critério");
     };
     aprovadosSegundaFase.forEach((candidato)=>{
-        const {candidatos, numeroAcertos} = candidato
+        const {candidatos, numeroAcertos} = candidato;
         lista += `${candidatos} - ${numeroAcertos} acertos\n`;
     });
     resp.innerText = lista;

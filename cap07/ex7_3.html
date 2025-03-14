@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const palavra = prompt("Palavra: ")
+        const tamanhoString = palavra.length
+
+        let inverso = palavra.charAt(tamanhoString - 1).toUpperCase();      // Inverso inicia com a última palavra em caixa alta
+        for(let i = tamanhoString - 2; i >= 0; i--){
+            inverso += palavra.charAt(i).toLowerCase()                      // Converte em caixa baixa
+        };
+        alert(`Palavra ${palavra}\n Palavra Invertida ${inverso}`)
+    </script>
+</body>
+</html>
