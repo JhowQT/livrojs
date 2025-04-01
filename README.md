@@ -1,4 +1,4 @@
-# Challenge-CCR
+# Livro - Lógica de programação e Algoritmos com JavaScript
 ## Tecnologias Usadas
 
 <div style="display: inline_block"><br>
