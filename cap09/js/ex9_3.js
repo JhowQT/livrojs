@@ -99,7 +99,25 @@ frm.btLimpar.addEventListener("click", ()=>{                                    
         mostrarApostas()                                                            // mostra a aposta vazia
     }
 })
-
-
-
+/*
+ Acrescentar nos site da Loja um contador de visitas do cliente ao site. Assim, na primeira visita do cliente à loja, exibir 
+ em um paragrafo so site a mensagem 
+  "Muito Bem-vindo! Está é a sua primeira visita ao nosso site"
+  É nas próximas visitas, exibir:
+ "Que bom que você voltou! Esta é a sua visita de número (X) ao nosso site"
+*/
+window.addEventListener("load", () => {
+    const msg = document.getElementById("mensagemVisita")
+    let visitas = localStorage.getItem("contadorVisitas")
+  
+    if (!visitas) {                                                                 // Primeira visita: ainda não existe valor salvo
+      
+      msg.innerText = "Muito bem-vindo! Esta é a sua primeira visita ao nosso site."
+      localStorage.setItem("contadorVisitas", "1")                                  // salva primeira visita
+    } else {                                                                        // Já existe valor: cliente já visitou antes
+      visitas = Number(visitas) + 1                                                 // soma mais 1
+      localStorage.setItem("contadorVisitas", visitas)                              // salva novo total
+      msg.innerText = `Que bom que você voltou! Esta é a sua visita de número ${visitas} ao nosso site.`
+    }
+  })
 
