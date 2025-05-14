@@ -8,7 +8,7 @@ window.addEventListener("load", () =>{
     const num0_25 = Math.ceil(Math.random() * 5)
     const num0_10 = Math.ceil(Math.random() * 5)
 
-    const alt1_00 = "Moedas de real"                                            // Texto de descriçã oque será usado no alt
+    const alt1_00 = "Moedas de Um real"                                            // Texto de descriçã oque será usado no alt
     const alt0_50 = "Moedas de Cinquenta Centavos"
     const alt0_25 = "Moedas de Vinte e Cinco Centavos"
     const alt0_10 = "Moedas de Dez Centavos"
