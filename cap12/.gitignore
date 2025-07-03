@@ -1,0 +1,20 @@
+# Ignorar dependências
+node_modules/
+
+# Ignorar banco de dados SQLite local
+data/*.db*
+*.sqlite
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar variáveis de ambiente
+.env
+
+# Ignorar pastas do editor
+.vscode/
+.idea/
+
+# Ignorar arquivos temporários
+*.tmp
+*.swp
